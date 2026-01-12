@@ -1,0 +1,21 @@
+@reference "../../style.css";
+
+/* Section 3 */
+.top-text *,
+.pink-text *,
+.bottom-text * {
+  @apply my-[8px] leading-base! text-[16px]! md:text-[18px]!;
+}
+
+.top-text li {
+  @apply pl-[32px] text-[#0c7c00] bg-[url('https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2_1.png?v=1760702838')] bg-[size:20px] bg-no-repeat list-none font-[600] font-family-nunito;
+}
+
+.pink-text {
+  @apply my-[24px] px-[16px] py-[8px] rounded-[8px] bg-[#ffe3e3];
+}
+
+.bottom-text li,
+.pink-text li {
+  @apply pl-[32px] text-[#a60003] bg-[url('https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Vector_7.png?v=1760702839')] bg-[size:20px] bg-no-repeat list-none font-[600] font-family-nunito;
+}

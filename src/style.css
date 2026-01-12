@@ -1,0 +1,262 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Fonts */
+  --font-family-nunito: 'Nunito';
+  --font-family-lora: 'Lora';
+  --font-family-open-sans: 'Open Sans', sans-serif;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-trirong: 'Trirong', serif;
+  /* Font Scale */
+  --font-body-scale: 1;
+  --font-heading-scale: 1;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-heading-weight: 400;
+
+  /* Colors */
+  --color-text-primary: #1c1d1d;
+  --color-text-secondary: #707070;
+  --color-text-black: rgba(0, 0, 0, 1);
+
+  /* Spacing */
+  --spacing-section: 3.2rem;
+  --max-width-container: 1340px;
+
+  /* Breakpoints (Tailwind default: sm=640px, md=768px, lg=1024px) */
+  --breakpoint-md: 750px;
+
+  /* Durations */
+  --duration-short: 0.1s;
+  --duration-default: 0.2s;
+  --duration-announcement-bar: 0.25s;
+  --duration-medium: 0.3s;
+  --duration-long: 0.5s;
+  --duration-extra-long: 0.6s;
+  --duration-extra-longer: 0.75s;
+  --duration-extended: 3s;
+
+  /* Easing */
+  --ease-out-slow: cubic-bezier(0, 0, 0.3, 1);
+
+  /* Animations */
+  --animation-slide-in: slideIn var(--duration-extra-long) var(--ease-out-slow) forwards;
+  --animation-fade-in: fadeIn var(--duration-extra-long) var(--ease-out-slow);
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Spacing Scale - Scaled for 10px base (multiply by 1.6) */
+
+  --spacing-0: 0;
+  --spacing-px: 1px;
+  --spacing-0\.5: 0.08rem; /* 0.8px */
+  --spacing-1: 0.16rem; /* 1.6px */
+  --spacing-1\.5: 0.24rem; /* 2.4px */
+  --spacing-2: 0.32rem; /* 3.2px */
+  --spacing-2\.5: 0.4rem; /* 4px */
+  --spacing-3: 0.48rem; /* 4.8px */
+  --spacing-3\.5: 0.56rem; /* 5.6px */
+  --spacing-4: 0.64rem; /* 6.4px */
+  --spacing-5: 0.8rem; /* 8px */
+  --spacing-6: 0.96rem; /* 9.6px */
+  --spacing-7: 1.12rem; /* 11.2px */
+  --spacing-8: 1.28rem; /* 12.8px */
+  --spacing-9: 1.44rem; /* 14.4px */
+  --spacing-10: 1.6rem; /* 16px */
+  --spacing-11: 1.76rem; /* 17.6px */
+  --spacing-12: 1.92rem; /* 19.2px */
+  --spacing-14: 2.24rem; /* 22.4px */
+  --spacing-16: 2.56rem; /* 25.6px */
+  --spacing-20: 3.2rem; /* 32px */
+  --spacing-24: 3.84rem; /* 38.4px */
+  --spacing-28: 4.48rem; /* 44.8px */
+  --spacing-32: 5.12rem; /* 51.2px */
+  --spacing-36: 5.76rem; /* 57.6px */
+  --spacing-40: 6.4rem; /* 64px */
+  --spacing-44: 7.04rem; /* 70.4px */
+  --spacing-48: 7.68rem; /* 76.8px */
+  --spacing-52: 8.32rem; /* 83.2px */
+  --spacing-56: 8.96rem; /* 89.6px */
+  --spacing-60: 9.6rem; /* 96px */
+  --spacing-62: 10rem; /* 100px */
+  --spacing-64: 10.24rem; /* 102.4px */
+  --spacing-72: 11.52rem; /* 115.2px */
+  --spacing-80: 12.8rem; /* 128px */
+  --spacing-96: 15.36rem; /* 153.6px */
+}
+
+@layer base {
+  /* HTML Base - font-size: 10px (62.5% of 16px) */
+  html,
+  body {
+    height: auto;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-family: var(--font-family-nunito);
+    font-size: calc(var(--font-body-scale) * 62.5%);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Body Base - 1.5rem = 15px */
+  body {
+    font-family: var(--font-family-nunito);
+    font-weight: var(--font-weight-normal);
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
+    color: var(--color-text-black);
+    overflow-x: hidden;
+  }
+
+  #app {
+    overflow-x: hidden;
+  }
+
+  /* Images */
+  img {
+    @apply block h-auto object-cover w-full;
+  }
+
+  /* Headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: var(--font-heading-weight);
+    font-family: var(--font-family-lora);
+    letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
+  }
+
+  /* Sections */
+  section {
+    @apply py-[32px]!;
+  }
+
+  /* Body responsive - 1.6rem = 16px trên màn hình >= 750px */
+  @media screen and (min-width: 750px) {
+    body {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@layer utilities {
+  .gap-sm {
+    @apply gap-[8px];
+  }
+
+  .gap-md {
+    @apply gap-[12px];
+  }
+
+  .gap-lg {
+    @apply gap-[16px];
+  }
+
+  .text-base {
+    @apply text-[16px]! leading-base!;
+  }
+}
+
+@layer components {
+  /* Container with max-width */
+  .page-width {
+    @apply mx-auto;
+    padding: 0 1.5rem;
+    max-width: var(--max-width-container);
+  }
+
+  @media screen and (min-width: 750px) {
+    .page-width {
+      @apply px-[5rem];
+    }
+  }
+  @media (max-width: 678px) {
+    .section-title {
+      @apply text-[24px]!;
+    }
+    .judge-outer {
+      padding: 32px 0px !important;
+    }
+  }
+
+  .desktop {
+    @apply hidden md:block;
+  }
+
+  .mobile {
+    @apply block md:hidden;
+  }
+
+  .arrow-img {
+    @apply block w-full max-w-[48px] my-[24px] mx-auto;
+  }
+
+  .green-text {
+    @apply text-[#039869]!;
+  }
+
+  .judge-container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .section-title {
+    @apply text-[32px] leading-[1.3em] my-[16px] font-[400] font-family-lora;
+  }
+
+  .section-text {
+    @apply text-[18px] leading-[1.3em] my-[16px] font-family-nunito;
+  }
+
+  .judge-outer {
+    @apply py-[56px];
+  }
+
+  .guarantee-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    font-size: 16px;
+    line-height: 1.3em;
+    margin: 16px 0 0;
+  }
+
+  .guarantee-tag img {
+    width: 24px !important;
+  }
+}
+@utility leading-base {
+  line-height: 1.3em;
+}

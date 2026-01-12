@@ -1,0 +1,39 @@
+@reference "../../style.css";
+
+.ingr-table {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: #fff;
+  border-radius: 12px;
+  border: 0.5px solid black;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 678px) {
+  .ingr-table {
+    grid-template-columns: 1fr;
+  }
+  .main-ingr-img {
+    @apply max-w-full! m-0!;
+  }
+
+  .thumb > div:nth-child(1) {
+    @apply w-[20%];
+  }
+
+  .thumb > div:nth-child(2) {
+    @apply w-[70%];
+  }
+  .thumb > div:nth-child(3) {
+    @apply w-[10%];
+  }
+
+  .thumb h5 {
+    @apply text-[14px]!;
+  }
+}
+
+.main-ingr-img {
+  @apply max-w-[120px] my-[12px] mx-auto max-h-[80px] w-auto!;
+}

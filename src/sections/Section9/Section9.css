@@ -1,0 +1,33 @@
+@reference "../../style.css";
+
+.section-9 {
+  padding: 50px 0;
+}
+
+.swiper-scrollbar-custom {
+  background: #e5e5e5;
+  height: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.swiper-scrollbar-drag {
+  background: #008761 !important; /* Green color from screenshot */
+  height: 100%;
+  border-radius: 4px;
+  position: relative;
+}
+
+.nav-buttons button.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.story-card img {
+  transition: transform 0.5s ease;
+}
+
+.story-card:hover img {
+  transform: scale(1.05);
+}

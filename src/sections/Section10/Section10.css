@@ -1,0 +1,26 @@
+@reference '../../style.css';
+
+.faq-container {
+  background: linear-gradient(180deg, #fff, #f3eee0);
+  @apply max-w-[824px] m-auto rounded-[16px] overflow-hidden p-[16px] md:p-[32px];
+}
+
+.faq-box {
+  @apply md:px-[24px] py-[16px] cursor-pointer border border-white;
+}
+
+.faq-thumb {
+  @apply flex justify-between items-center gap-[12px];
+}
+
+.faq-thumb {
+  @apply text-[18px] leading-base;
+}
+
+.faq-content {
+  @apply pt-[16px];
+}
+
+.faq-content p {
+  @apply text-[16px] leading-[1.3em];
+}

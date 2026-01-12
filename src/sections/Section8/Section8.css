@@ -1,0 +1,27 @@
+@reference "../../style.css";
+
+.expert-wrapper {
+  @apply flex justify-center;
+}
+
+@media only screen and (max-width: 678px) {
+  .expert-wrapper {
+    @apply flex flex-col-reverse flex-wrap;
+  }
+}
+
+.expert-wrapper > div {
+  @apply w-full;
+}
+
+.expert-content {
+  @apply overflow-hidden md:px-[32px] p-[16px];
+}
+
+.product-text p {
+  @apply text-[18px] leading-base my-[12px];
+}
+
+.expert-media img {
+  @apply w-full h-full rounded-[12px] overflow-hidden object-cover;
+}

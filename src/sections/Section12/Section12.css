@@ -1,0 +1,9 @@
+@reference '../../style.css';
+
+.section12-outer {
+  @apply py-[40px];
+}
+
+.section12-content {
+  @apply mt-[32px];
+}
