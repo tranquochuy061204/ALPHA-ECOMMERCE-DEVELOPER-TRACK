@@ -4,7 +4,7 @@ This is my repository of the Perfect-Pixel Landing Page for the ALPHA – ECOMME
 
 ---
 
-## 🚀 Công nghệ sử dụng
+## Công nghệ sử dụng
 
 | Công nghệ | Phiên bản | Mô tả |
 |-----------|-----------|-------|
@@ -18,14 +18,14 @@ This is my repository of the Perfect-Pixel Landing Page for the ALPHA – ECOMME
 
 ---
 
-## 📋 Yêu cầu hệ thống
+## Yêu cầu hệ thống
 
 - **Node.js**: >= 18.x
 - **npm**: >= 9.x hoặc **yarn**: >= 1.22.x
 
 ---
 
-## 🛠️ Hướng dẫn cài đặt và chạy dự án
+## Hướng dẫn cài đặt và chạy dự án
 
 ### 1. Clone repository
 
@@ -117,7 +117,7 @@ alpha-test/
 
 ---
 
-## 📝 Scripts có sẵn
+## Scripts có sẵn
 
 | Lệnh | Mô tả |
 |------|-------|
@@ -127,12 +127,12 @@ alpha-test/
 
 ---
 
-## 👤 Tác giả
+## Tác giả
 
-**PATI Group - Alpha Ecommerce Developer Track**
+**Trần Quốc Huy**
 
 ---
 
-## 📄 License
+## License
 
 Dự án này được phát triển cho mục đích kiểm tra/đánh giá.
