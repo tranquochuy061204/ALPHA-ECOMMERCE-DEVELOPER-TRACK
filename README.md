@@ -4,50 +4,28 @@ This is my repository of the Perfect-Pixel Landing Page for the ALPHA – ECOMME
 
 ---
 
-<<<<<<< HEAD
-## 🚀 Công nghệ sử dụng
+## 🚀 Technologies Used
 
-| Công nghệ          | Phiên bản | Mô tả                                                |
-| ------------------ | --------- | ---------------------------------------------------- |
-| **React**          | ^19.2.3   | Thư viện JavaScript để xây dựng giao diện người dùng |
-| **Vite**           | ^7.2.4    | Build tool nhanh và nhẹ cho dự án frontend           |
-| **Tailwind CSS**   | ^4.1.18   | Framework CSS utility-first để styling               |
-| **Swiper**         | ^12.0.3   | Thư viện slider/carousel hiện đại                    |
-| **Embla Carousel** | ^8.6.0    | Thư viện carousel nhẹ và linh hoạt                   |
-| **React Slick**    | ^0.31.0   | Component carousel cho React                         |
-| **React Icons**    | ^5.5.0    | Bộ icon phổ biến cho React                           |
-
----
-
-## 📋 Yêu cầu hệ thống
-=======
-## Công nghệ sử dụng
-
-| Công nghệ | Phiên bản | Mô tả |
-|-----------|-----------|-------|
-| **React** | ^19.2.3 | Thư viện JavaScript để xây dựng giao diện người dùng |
-| **Vite** | ^7.2.4 | Build tool nhanh và nhẹ cho dự án frontend |
-| **Tailwind CSS** | ^4.1.18 | Framework CSS utility-first để styling |
-| **Swiper** | ^12.0.3 | Thư viện slider/carousel hiện đại |
-| **Embla Carousel** | ^8.6.0 | Thư viện carousel nhẹ và linh hoạt |
-| **React Slick** | ^0.31.0 | Component carousel cho React |
-| **React Icons** | ^5.5.0 | Bộ icon phổ biến cho React |
+| Technology         | Version | Description                                     |
+| ------------------ | ------- | ----------------------------------------------- |
+| **React**          | ^19.2.3 | JavaScript library for building user interfaces |
+| **Vite**           | ^7.2.4  | Fast and lightweight build tool for frontend    |
+| **Tailwind CSS**   | ^4.1.18 | Utility-first CSS framework for styling         |
+| **Swiper**         | ^12.0.3 | Modern slider/carousel library                  |
+| **Embla Carousel** | ^8.6.0  | Lightweight and flexible carousel library       |
+| **React Slick**    | ^0.31.0 | Carousel component for React                    |
+| **React Icons**    | ^5.5.0  | Popular icon library for React                  |
 
 ---
 
-## Yêu cầu hệ thống
->>>>>>> 6bb2187b724a3569a30a9539b736a0dfcdbae92f
+## 📋 System Requirements
 
 - **Node.js**: >= 18.x
-- **npm**: >= 9.x hoặc **yarn**: >= 1.22.x
+- **npm**: >= 9.x or **yarn**: >= 1.22.x
 
 ---
 
-<<<<<<< HEAD
-## 🛠️ Hướng dẫn cài đặt và chạy dự án
-=======
-## Hướng dẫn cài đặt và chạy dự án
->>>>>>> 6bb2187b724a3569a30a9539b736a0dfcdbae92f
+## 🛠️ Installation and Running the Project
 
 ### 1. Clone repository
 
@@ -56,51 +34,51 @@ git clone <repository-url>
 cd alpha-test
 ```
 
-### 2. Cài đặt dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-hoặc sử dụng yarn:
+or using yarn:
 
 ```bash
 yarn install
 ```
 
-### 3. Chạy dự án ở chế độ development
+### 3. Run the project in development mode
 
 ```bash
 npm run dev
 ```
 
-hoặc:
+or:
 
 ```bash
 yarn dev
 ```
 
-Sau khi chạy lệnh, mở trình duyệt và truy cập: **http://localhost:5173**
+After running the command, open your browser and visit: **http://localhost:5173**
 
-### 4. Build dự án cho production
+### 4. Build for production
 
 ```bash
 npm run build
 ```
 
-hoặc:
+or:
 
 ```bash
 yarn build
 ```
 
-### 5. Preview bản build production
+### 5. Preview production build
 
 ```bash
 npm run preview
 ```
 
-hoặc:
+or:
 
 ```bash
 yarn preview
@@ -108,73 +86,53 @@ yarn preview
 
 ---
 
-## 📁 Cấu trúc thư mục
+## 📁 Project Structure
 
 ```
 alpha-test/
 ├── public/                 # Static assets
 ├── src/
-│   ├── components/         # Các component tái sử dụng
-│   │   ├── section1/       # Components cho Section 1
-│   │   ├── section2/       # Components cho Section 2
-│   │   ├── section4/       # Components cho Section 4
-│   │   ├── section5/       # Components cho Section 5
-│   │   ├── section10/      # Components cho Section 10
-│   │   └── ...             # Các component khác
-│   ├── sections/           # Các section của trang
+│   ├── components/         # Reusable components
+│   │   ├── section1/       # Components for Section 1
+│   │   ├── section2/       # Components for Section 2
+│   │   ├── section4/       # Components for Section 4
+│   │   ├── section5/       # Components for Section 5
+│   │   ├── section10/      # Components for Section 10
+│   │   └── ...             # Other components
+│   ├── sections/           # Page sections
 │   │   ├── Section1/
 │   │   ├── Section2/
 │   │   └── ...             # Section 3-12
 │   ├── data/               # Mock data
 │   ├── utils/              # Utility functions
-│   ├── App.jsx             # Component chính
+│   ├── App.jsx             # Main component
 │   ├── main.jsx            # Entry point
 │   └── style.css           # Global styles
-├── assets/                 # Hình ảnh và media
+├── assets/                 # Images and media
 ├── index.html              # HTML template
-├── package.json            # Dependencies và scripts
-├── vite.config.js          # Cấu hình Vite
-└── README.md               # Tài liệu dự án
+├── package.json            # Dependencies and scripts
+├── vite.config.js          # Vite configuration
+└── README.md               # Project documentation
 ```
 
 ---
 
-<<<<<<< HEAD
-## 📝 Scripts có sẵn
+## 📝 Available Scripts
 
-| Lệnh              | Mô tả                                  |
+| Command           | Description                            |
 | ----------------- | -------------------------------------- |
-| `npm run dev`     | Chạy server development với hot reload |
-| `npm run build`   | Build dự án cho production             |
-| `npm run preview` | Preview bản build production           |
+| `npm run dev`     | Run development server with hot reload |
+| `npm run build`   | Build project for production           |
+| `npm run preview` | Preview production build               |
 
 ---
 
-## 👤 Tác giả
+## 👤 Author
 
-**PATI Group - Alpha Ecommerce Developer Track**
+Trần Quốc Huy
 
 ---
 
 ## 📄 License
-=======
-## Scripts có sẵn
 
-| Lệnh | Mô tả |
-|------|-------|
-| `npm run dev` | Chạy server development với hot reload |
-| `npm run build` | Build dự án cho production |
-| `npm run preview` | Preview bản build production |
-
----
-
-## Tác giả
-
-**Trần Quốc Huy**
-
----
-
-## License
->>>>>>> 6bb2187b724a3569a30a9539b736a0dfcdbae92f
-
-Dự án này được phát triển cho mục đích kiểm tra/đánh giá.
+This project was developed for testing/evaluation purposes.
