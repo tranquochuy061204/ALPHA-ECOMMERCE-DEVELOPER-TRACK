@@ -1,6 +1,6 @@
 import React from 'react';
 import './Section4.css';
-import FailReasonsBox from '../../components/section4/failReasonsBox';
+import FailReasonsBox from '../../components/section4/FailReasonsBox';
 import { failReasons } from '../../data/mockData';
 import BlackButton from '../../components/BlackButton';
 

@@ -10,6 +10,20 @@ import { FaShippingFast, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import BlackButton from '../../components/BlackButton.jsx';
 import refillText from '../../utils/RefillText.jsx';
 import SlidingBox from '../../components/SlidingBox.jsx';
+
+// Import images
+import product1 from '../../../assets/hero_section/product-1.webp';
+import product2 from '../../../assets/hero_section/product-2.webp';
+import product3 from '../../../assets/hero_section/product-3.webp';
+import product4 from '../../../assets/hero_section/product-4.webp';
+import product5 from '../../../assets/hero_section/product-5.webp';
+import product6 from '../../../assets/hero_section/product-6.webp';
+import report1 from '../../../assets/hero_section/report-1.png';
+import report2 from '../../../assets/hero_section/report-2.png';
+import ratingStar from '../../../assets/hero_section/rating_star.png';
+import paymentMethod from '../../../assets/hero_section/paymentmethod.avif';
+import saleBanner from '../../../assets/hero_section/salebanner.avif';
+import fbAvatar from '../../../assets/hero_section/fb-avatar.avif';
 function HeroSection() {
   const [selectedPackage, setSelectedPackage] = useState('package-2');
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -18,14 +32,14 @@ function HeroSection() {
   const thumbSliderRef = useRef(null);
 
   const productImages = [
-    { src: './assets/hero_section/product-1.webp', alt: 'product-1', isMain: true },
-    { src: './assets/hero_section/product-2.webp', alt: 'product-2' },
-    { src: './assets/hero_section/product-3.webp', alt: 'product-3' },
-    { src: './assets/hero_section/product-4.webp', alt: 'product-4' },
-    { src: './assets/hero_section/product-5.webp', alt: 'product-5' },
-    { src: './assets/hero_section/product-6.webp', alt: 'product-6' },
-    { src: './assets/hero_section/report-1.png', alt: 'report-1' },
-    { src: './assets/hero_section/report-2.png', alt: 'report-2' },
+    { src: product1, alt: 'product-1', isMain: true },
+    { src: product2, alt: 'product-2' },
+    { src: product3, alt: 'product-3' },
+    { src: product4, alt: 'product-4' },
+    { src: product5, alt: 'product-5' },
+    { src: product6, alt: 'product-6' },
+    { src: report1, alt: 'report-1' },
+    { src: report2, alt: 'report-2' },
   ];
 
   const handleThumbClick = (index) => {
@@ -141,12 +155,7 @@ function HeroSection() {
               {/* Desktop Grid */}
               <div className="col-1 hidden md:block">
                 <div className="product-image main-product relative">
-                  <img
-                    className="rounded-lg w-full h-auto"
-                    src="./assets/hero_section/product-1.webp"
-                    alt="product-1"
-                    loading="eager"
-                  />
+                  <img className="rounded-lg w-full h-auto" src={product1} alt="product-1" loading="eager" />
                   <div className="nutrition-info" onClick={() => setIsPopupOpen(true)}>
                     <span>
                       <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/leaves_1247958_1_cf2e7df4-c113-4c3a-be49-f876ec94d873.png?v=1766822629" />
@@ -160,54 +169,19 @@ function HeroSection() {
                 </div>
 
                 <div className="product-image 2nd-product grid grid-cols-2 gap-[16px]  my-[16px]">
-                  <img
-                    className="rounded-lg w-full h-auto"
-                    src="./assets/hero_section/product-2.webp"
-                    alt="product-2"
-                    loading="lazy"
-                  />
-                  <img
-                    className="rounded-lg w-full h-auto"
-                    src="./assets/hero_section/product-3.webp"
-                    alt="product-3"
-                    loading="lazy"
-                  />
+                  <img className="rounded-lg w-full h-auto" src={product2} alt="product-2" loading="lazy" />
+                  <img className="rounded-lg w-full h-auto" src={product3} alt="product-3" loading="lazy" />
                 </div>
 
                 <div className="product-image 3rd-product my-[16px] grid grid-cols-3 gap-[16px] lg:gap-lg">
-                  <img
-                    className="rounded-lg w-full h-auto"
-                    src="./assets/hero_section/product-4.webp"
-                    alt="product-4"
-                    loading="lazy"
-                  />
-                  <img
-                    className="rounded-lg w-full h-auto"
-                    src="./assets/hero_section/product-5.webp"
-                    alt="product-5"
-                    loading="lazy"
-                  />
-                  <img
-                    className="rounded-lg w-full h-auto"
-                    src="./assets/hero_section/product-6.webp"
-                    alt="product-6"
-                    loading="lazy"
-                  />
+                  <img className="rounded-lg w-full h-auto" src={product4} alt="product-4" loading="lazy" />
+                  <img className="rounded-lg w-full h-auto" src={product5} alt="product-5" loading="lazy" />
+                  <img className="rounded-lg w-full h-auto" src={product6} alt="product-6" loading="lazy" />
                 </div>
 
                 <div className="product-image 4th-product grid grid-cols-2 gap-[16px] lg:gap-lg my-[16px]">
-                  <img
-                    className="rounded-lg w-full h-auto aspect-auto!"
-                    src="./assets/hero_section/report-1.png"
-                    alt="report-1"
-                    loading="lazy"
-                  />
-                  <img
-                    className="rounded-lg w-full h-auto aspect-auto!"
-                    src="./assets/hero_section/report-2.png"
-                    alt="report-2"
-                    loading="lazy"
-                  />
+                  <img className="rounded-lg w-full h-auto aspect-auto!" src={report1} alt="report-1" loading="lazy" />
+                  <img className="rounded-lg w-full h-auto aspect-auto!" src={report2} alt="report-2" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -218,11 +192,7 @@ function HeroSection() {
                 {/* Review */}
                 <div className="review flex gap-lg m-0! items-start text-start! mb-[16px]! text-base">
                   <div className="flex mt-0!">
-                    <img
-                      className="w-[60px]! md:w-[100px]! object-contain mt-px"
-                      src="./assets/hero_section/rating_star.png"
-                      alt="rating"
-                    />
+                    <img className="w-[60px]! md:w-[100px]! object-contain mt-px" src={ratingStar} alt="rating" />
                   </div>
                   <div>
                     <p className="leading-[1.3em] text-[12px]! md:text-[16px]! md:text-base">
@@ -373,11 +343,11 @@ function HeroSection() {
                 {/* Payment method and sale banner */}
                 <div className="payment-medthod sale-banner mt-[16px] mb-[16px] flex flex-col gap-lg">
                   <div className="w-full ">
-                    <img src="../../assets/hero_section/paymentmethod.avif" alt="payment method" />
+                    <img src={paymentMethod} alt="payment method" />
                   </div>
 
                   <div className="w-full ">
-                    <img src="../../assets/hero_section/salebanner.avif" alt="sale banner" />
+                    <img src={saleBanner} alt="sale banner" />
                   </div>
                 </div>
 
@@ -406,7 +376,7 @@ function HeroSection() {
                 <div className="mt-[24px] p-[12px] w-full bg-[#f3eee0] rounded-[12px]">
                   <div className="flex items-center gap-lg mb-[8px]">
                     <div className="feedback-avatar w-[15%]">
-                      <img src="../../assets/hero_section/fb-avatar.avif" />
+                      <img src={fbAvatar} alt="avatar" />
                     </div>
 
                     <div className="w-full flex flex-col">
@@ -420,11 +390,7 @@ function HeroSection() {
                             ></img>
                           </span>
                         </p>
-                        <img
-                          className="max-w-[100px] mt-[6px] block"
-                          src="../../assets/hero_section/rating_star.png"
-                          alt=""
-                        />
+                        <img className="max-w-[100px] mt-[6px] block" src={ratingStar} alt="rating" />
                       </div>
                     </div>
                   </div>

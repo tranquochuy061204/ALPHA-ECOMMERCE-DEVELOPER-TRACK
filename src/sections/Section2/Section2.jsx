@@ -2,6 +2,8 @@ import './Section2.css';
 import { symptoms } from '../../data/mockData.js';
 import Symptoms from '../../components/section2/Symptoms.jsx';
 
+import arrowImg from '../../../assets/section2/arrow.jxl';
+
 const Section2 = () => {
   return (
     <div className="page-width pt-[56px]">
@@ -59,7 +61,7 @@ const Section2 = () => {
             />
           </div>
 
-          <img src="../../assets/section2/arrow.jxl" alt="" className="arrow-img" />
+          <img src={arrowImg} alt="arrow" className="arrow-img" />
         </div>
       </div>
     </div>

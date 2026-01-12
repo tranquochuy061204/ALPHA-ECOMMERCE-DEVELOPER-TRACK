@@ -2,7 +2,7 @@ import './Section5.css';
 
 import React from 'react';
 import { ingredients } from '../../data/mockData';
-import IngredientBox from '../../components/section5/ingredientBox';
+import IngredientBox from '../../components/section5/IngredientBox';
 const Section5 = () => {
   return (
     <div className="judge-outer bg-[#f3eee0]">
