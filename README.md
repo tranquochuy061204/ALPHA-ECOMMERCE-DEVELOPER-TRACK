@@ -4,6 +4,7 @@ This is my repository of the Perfect-Pixel Landing Page for the ALPHA – ECOMME
 
 ---
 
+<<<<<<< HEAD
 ## 🚀 Công nghệ sử dụng
 
 | Công nghệ          | Phiên bản | Mô tả                                                |
@@ -19,13 +20,34 @@ This is my repository of the Perfect-Pixel Landing Page for the ALPHA – ECOMME
 ---
 
 ## 📋 Yêu cầu hệ thống
+=======
+## Công nghệ sử dụng
+
+| Công nghệ | Phiên bản | Mô tả |
+|-----------|-----------|-------|
+| **React** | ^19.2.3 | Thư viện JavaScript để xây dựng giao diện người dùng |
+| **Vite** | ^7.2.4 | Build tool nhanh và nhẹ cho dự án frontend |
+| **Tailwind CSS** | ^4.1.18 | Framework CSS utility-first để styling |
+| **Swiper** | ^12.0.3 | Thư viện slider/carousel hiện đại |
+| **Embla Carousel** | ^8.6.0 | Thư viện carousel nhẹ và linh hoạt |
+| **React Slick** | ^0.31.0 | Component carousel cho React |
+| **React Icons** | ^5.5.0 | Bộ icon phổ biến cho React |
+
+---
+
+## Yêu cầu hệ thống
+>>>>>>> 6bb2187b724a3569a30a9539b736a0dfcdbae92f
 
 - **Node.js**: >= 18.x
 - **npm**: >= 9.x hoặc **yarn**: >= 1.22.x
 
 ---
 
+<<<<<<< HEAD
 ## 🛠️ Hướng dẫn cài đặt và chạy dự án
+=======
+## Hướng dẫn cài đặt và chạy dự án
+>>>>>>> 6bb2187b724a3569a30a9539b736a0dfcdbae92f
 
 ### 1. Clone repository
 
@@ -117,6 +139,7 @@ alpha-test/
 
 ---
 
+<<<<<<< HEAD
 ## 📝 Scripts có sẵn
 
 | Lệnh              | Mô tả                                  |
@@ -134,5 +157,24 @@ alpha-test/
 ---
 
 ## 📄 License
+=======
+## Scripts có sẵn
+
+| Lệnh | Mô tả |
+|------|-------|
+| `npm run dev` | Chạy server development với hot reload |
+| `npm run build` | Build dự án cho production |
+| `npm run preview` | Preview bản build production |
+
+---
+
+## Tác giả
+
+**Trần Quốc Huy**
+
+---
+
+## License
+>>>>>>> 6bb2187b724a3569a30a9539b736a0dfcdbae92f
 
 Dự án này được phát triển cho mục đích kiểm tra/đánh giá.

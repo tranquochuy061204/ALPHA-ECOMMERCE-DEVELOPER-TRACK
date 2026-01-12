@@ -24,6 +24,7 @@ import ratingStar from '../../../assets/hero_section/rating_star.png';
 import paymentMethod from '../../../assets/hero_section/paymentmethod.avif';
 import saleBanner from '../../../assets/hero_section/salebanner.avif';
 import fbAvatar from '../../../assets/hero_section/fb-avatar.avif';
+
 function HeroSection() {
   const [selectedPackage, setSelectedPackage] = useState('package-2');
   const [isPopupOpen, setIsPopupOpen] = useState(false);

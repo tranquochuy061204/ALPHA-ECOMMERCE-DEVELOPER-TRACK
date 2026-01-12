@@ -1,3 +1,18 @@
+// Import feature images
+import f1 from '../../assets/hero_section/f1.png';
+import f2 from '../../assets/hero_section/f2.jxl';
+import f3 from '../../assets/hero_section/f3.png';
+import f4 from '../../assets/hero_section/f4.png';
+import f5 from '../../assets/hero_section/f5.png';
+import f6 from '../../assets/hero_section/f6.png';
+
+// Import symptom images
+import symptom1 from '../../assets/section2/symptom1.webp';
+import symptom2 from '../../assets/section2/symptom2.jxl';
+import symptom3 from '../../assets/section2/symptom3.webp';
+import symptom4 from '../../assets/section2/symptom4.webp';
+import symptom5 from '../../assets/section2/symptom5.webp';
+
 export const packages = [
   {
     id: 'package-1',
@@ -44,32 +59,32 @@ export const packages = [
 export const features = [
   {
     id: 1,
-    image: './assets/hero_section/f1.png',
+    image: f1,
     text: 'Join over 93 Thousand who say - it WORKS!',
   },
   {
     id: 2,
-    image: './assets/hero_section/f2.jxl',
+    image: f2,
     text: "Restores your body's natural 24-hour lymphatic cycle",
   },
   {
     id: 3,
-    image: './assets/hero_section/f3.png',
+    image: f3,
     text: 'Helps reduce fluid retention and the appearance of puffiness and bloating',
   },
   {
     id: 4,
-    image: './assets/hero_section/f4.png',
+    image: f4,
     text: 'Helps fall asleep faster, stay asleep longer and wake up energized',
   },
   {
     id: 5,
-    image: './assets/hero_section/f5.png',
+    image: f5,
     text: 'Eliminates joint stiffness, pain, morning creakiness and feel more grounded',
   },
   {
     id: 6,
-    image: './assets/hero_section/f6.png',
+    image: f6,
     text: 'Boosts energy, mental clarity and emotional balance',
   },
 ];
@@ -77,27 +92,27 @@ export const features = [
 export const symptoms = [
   {
     id: 1,
-    imgLink: './assets/section2/symptom1.webp',
+    imgLink: symptom1,
     text: 'Your stomach is flat in the morning, but by evening you look six months pregnant.',
   },
   {
     id: 2,
-    imgLink: './assets/section2/symptom2.jxl',
+    imgLink: symptom2,
     text: 'Your ankles disappear into "kankles" by the end of the day.',
   },
   {
     id: 3,
-    imgLink: './assets/section2/symptom3.webp',
+    imgLink: symptom3,
     text: "That dimpled, cottage cheese texture on your thighs won't go away no matter what you try",
   },
   {
     id: 4,
-    imgLink: './assets/section2/symptom4.webp',
+    imgLink: symptom4,
     text: "You feel foggy and exhausted even after a full night's sleep.",
   },
   {
     id: 5,
-    imgLink: './assets/section2/symptom5.webp',
+    imgLink: symptom5,
     text: 'You wake up stiff and achy, like your body aged overnight.',
   },
 ];
